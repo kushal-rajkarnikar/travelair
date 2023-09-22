@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/Hero.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 60px;
+  /* identical to box height, or 86% */
+
+  text-align: center;
+
+  color: #514d59;
+  margin-bottom: 90px;
+}
+
+.goods-block {
+  text-align: center;
+  width: 25%;
+  margin-bottom: 60px;
+}
+
+.flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.goods-block h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #514d59;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.goods-block p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  text-align: center;
+
+  color: #514d59;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#cities {
+  background: #fafafa;
+  border: 1px solid rgba(81, 77, 89, 0.15);
+}
+
+#cities .container {
+  width: 70%;
+}
+
+#cities h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  /* or 120% */
+
+  color: #514d59;
+}
+
+#cities p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+
+  color: #514d59;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#cities a {
+  color: #7000ff;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.city-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.w50 {
+  width: 50%;
+}
+
+#intro-section {
+  padding-top: 200px;
+  padding-bottom: 300px;
+}
+
+.booking-box {
+  max-width: 920px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#coffee-icon {
+  position: absolute;
+  right: -50px;
+  bottom: -60px;
+  z-index: 1;
+}
+
+.booking-title {
+  background: #212121;
+  border-radius: 20px 120px 0px 0px;
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.booking-wrapper {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(81, 77, 89, 0.1);
+  box-shadow: 0px 195px 78px rgba(81, 77, 89, 0.02),
+    0px 110px 66px rgba(81, 77, 89, 0.08), 0px 49px 49px rgba(81, 77, 89, 0.13),
+    0px 12px 27px rgba(81, 77, 89, 0.15), 0px 0px 0px rgba(81, 77, 89, 0.15);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 0px 20px 20px 20px;
+  padding: 25px;
+}
+
+.booking-form {
+  background: white;
+  padding: 32px 25px;
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #goods-section .flex {
+    flex-wrap: wrap;
+  }
+  .goods-block {
+    width: 50%;
+  }
+  section h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  #cities h3 {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 575px) {
+  .city-img {
+    max-width: 300px;
+    margin: 0 auto 30px auto;
+    display: block;
+  }
+  #cities .flex {
+    flex-wrap: wrap;
+  }
+  .w50 {
+    width: 100%;
+  }
+  #cities h3 {
+    font-size: 26px;
+    line-height: 1;
+  }
+  #goods-section .flex {
+    flex-wrap: wrap;
+  }
+  .goods-block {
+    width: 100%;
+  }
+  section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
